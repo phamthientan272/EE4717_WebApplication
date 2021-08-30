@@ -1,0 +1,88 @@
+body {font-family: Verdana, Arial, sans-serif;
+    background-image: url(background.JPG);
+    background-color: #E2D2B0;
+
+}
+
+header{
+    background-image: url(javalogo.jpg);
+    background-color: #ccaa66;
+    background-repeat: no-repeat;
+    background-position: center;
+    height: 100px;
+}
+
+#wrapper { background-color: #E2D2B0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+    min-width: 800px;
+    max-width: 1024px;
+}
+
+#leftcolumn { float: left;
+    width: 150px;
+}
+
+#rightcolumn { margin-left: 155px;
+    background-color: #FCEBB6;
+    overflow: auto;
+    padding: 0px 20px 30px 20px;
+}
+
+footer{background-color: #ccaa66;
+    font-size:  small;
+    font-style: italic;
+    text-align: center;
+    padding: 20px 0px;
+}
+
+footer a:link{ color:#724A39}
+
+footer a:visited{ color: #a17e62;}
+
+footer a:hover {color: #330000;}
+
+nav { text-align: center;
+    width: 100px;
+    font-weight: bold;
+    padding-top: 10px;
+
+}
+
+nav a {
+    text-decoration: none;
+    padding-bottom: 15px;
+}
+
+nav a:link { color: #724A39; }
+
+nav a:visited{ color: #a17e62;}
+
+nav a:hover {color: #330000;}
+
+nav ul { list-style-type: none;
+}
+
+
+.floatleft {float: left;
+            padding: 0px 50px 10px 30px;
+}
+
+h2 { color: #3f1c28;
+    font-family: arial, sans-serif;
+}
+
+
+#content ul {
+    list-style: none; /* Remove default bullets */
+  }
+
+#content ul li::before {
+    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
+    color: #724A39; /* Change the color */
+    font-weight: bold; /* If you want it to be bold */
+    display: inline-block; /* Needed to add space between the bullet and the text */
+    width: 1em; /* Also needed for space (tweak if needed) */
+    margin-left: -1em; /* Also needed for space (tweak if needed) */
+  }
