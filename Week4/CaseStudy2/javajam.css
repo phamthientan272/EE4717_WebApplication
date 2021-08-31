@@ -1,15 +1,19 @@
-body {font-family: Verdana, Arial, sans-serif;
+body {font-family: Tahoma, Verdana, sans-serif;
     background-image: url(background.JPG);
     background-color: #E2D2B0;
-
+    margin-top: 0;
 }
 
 header{
-    background-image: url(javalogo.jpg);
-    background-color: #ccaa66;
-    background-repeat: no-repeat;
-    background-position: center;
+    background-color: #D3B58C;
     height: 100px;
+
+}
+
+#logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 #wrapper { background-color: #E2D2B0;
@@ -25,12 +29,14 @@ header{
 }
 
 #rightcolumn { margin-left: 155px;
-    background-color: #FCEBB6;
+    background-color: #F5F5DC;
     overflow: auto;
     padding: 0px 20px 30px 20px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
-footer{background-color: #ccaa66;
+footer{background-color: #D3B58C;
     font-size:  small;
     font-style: italic;
     text-align: center;
@@ -86,3 +92,30 @@ h2 { color: #3f1c28;
     width: 1em; /* Also needed for space (tweak if needed) */
     margin-left: -1em; /* Also needed for space (tweak if needed) */
   }
+
+
+
+table {
+    margin-left: auto;
+    margin-right: auto;
+    width: 550px;
+    border-spacing: 0;
+}
+
+table tr th {
+    border-right: 2px solid #F5F5DC;
+    color: #3f1c28;
+    font-weight: bold;
+}
+
+td {
+    padding: 10px 30px 10px 10px;
+}
+
+tr:nth-of-type(even) {
+    background-color: #F5F5DC;
+}
+
+tr:nth-of-type(odd) {
+    background-color: #D3B58C;
+}
