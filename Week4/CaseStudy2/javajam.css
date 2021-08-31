@@ -1,4 +1,4 @@
-body {font-family: Tahoma, Verdana, sans-serif;
+body {font-family: Arial, Helvetica, sans-serif, sans-serif;
     background-image: url(background.JPG);
     background-color: #E2D2B0;
     margin-top: 0;
@@ -77,6 +77,13 @@ nav ul { list-style-type: none;
 
 h2 { color: #3f1c28;
     font-family: arial, sans-serif;
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+p {
+    padding-right: 30px;
 }
 
 
@@ -100,22 +107,53 @@ table {
     margin-right: auto;
     width: 550px;
     border-spacing: 0;
+    padding-bottom: 20px;
+    padding-top: 10px;
+
 }
 
-table tr th {
+#table_menu tr th {
     border-right: 2px solid #F5F5DC;
     color: #3f1c28;
     font-weight: bold;
+}
+
+#table_menu tr:nth-of-type(even) {
+    background-color: #F5F5DC;
+}
+
+#table_menu tr:nth-of-type(odd) {
+    background-color: #D3B58C;
 }
 
 td {
     padding: 10px 30px 10px 10px;
 }
 
-tr:nth-of-type(even) {
+table td:first {
+    width: 150px;
+}
+
+thead {
+    background-color: #E2D2B0;
+    color: #3f1c28;
+    font-weight: bold;
+}
+
+thead td{
+    padding: 0px 0px 0px 0px;
+}
+
+tbody {
     background-color: #F5F5DC;
 }
 
-tr:nth-of-type(odd) {
-    background-color: #D3B58C;
+audio {
+    padding-top: 10px;
+}
+
+.music img{
+    width: 100px;
+    height: 100px;
+    padding-top: 0px;
 }
