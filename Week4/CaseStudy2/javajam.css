@@ -157,3 +157,24 @@ audio {
     height: 100px;
     padding-top: 0px;
 }
+
+
+
+label { display: block;
+    float: left;
+    text-align: right;
+    width: 8em;
+    padding-right: 30px; }
+
+input, textarea { display: block;
+    margin-bottom: 20px;
+    margin-left: 20px;
+    width: 150px;
+    padding: 1px;
+    border: 1px solid black;
+}
+
+#submit {
+    width: 100px;
+    border-radius: 5px;
+}
