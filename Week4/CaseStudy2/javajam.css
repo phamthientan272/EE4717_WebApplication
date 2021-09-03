@@ -1,19 +1,9 @@
-body {font-family: Arial, Helvetica, sans-serif, sans-serif;
+/* ====== Layout ======== */
+
+body {font-family: Verdana, Arial, Helvetica, sans-serif, sans-serif;
     background-image: url(background.JPG);
     background-color: #E2D2B0;
     margin-top: 0;
-}
-
-header{
-    background-color: #D3B58C;
-    height: 100px;
-
-}
-
-#logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 #wrapper { background-color: #E2D2B0;
@@ -24,6 +14,7 @@ header{
     max-width: 1024px;
 }
 
+
 #leftcolumn { float: left;
     width: 150px;
 }
@@ -32,6 +23,33 @@ header{
     background-color: #F5F5DC;
     overflow: auto;
     padding: 0px 20px 30px 20px;
+    margin-left: 150px;
+}
+
+.floatleft {float: left;
+    padding: 0px 50px 10px 30px;
+}
+
+
+header{
+    background-color: #D3B58C;
+    height: 100px;
+}
+
+p {
+    padding-right: 30px;
+}
+
+h2 { color: #3f1c28;
+    font-family: arial, sans-serif;
+    margin: 15px 0px;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+
+#logo {
+    display: block;
     margin-left: auto;
     margin-right: auto;
 }
@@ -71,41 +89,25 @@ nav ul { list-style-type: none;
 }
 
 
-.floatleft {float: left;
-            padding: 0px 50px 10px 30px;
-}
-
-h2 { color: #3f1c28;
-    font-family: arial, sans-serif;
-    margin: 15px 0px;
-    font-weight: bold;
-    font-size: 1.5em;
-}
-
-p {
-    padding-right: 30px;
-}
-
-
 #content ul {
     list-style: none; /* Remove default bullets */
   }
 
-#content ul li::before {
-    content: "\2022";  /* Add content: \2022 is the CSS Code/unicode for a bullet */
-    color: #724A39; /* Change the color */
-    font-weight: bold; /* If you want it to be bold */
-    display: inline-block; /* Needed to add space between the bullet and the text */
-    width: 1em; /* Also needed for space (tweak if needed) */
-    margin-left: -1em; /* Also needed for space (tweak if needed) */
-  }
+#content ul li{
+    display: inline-block;
+    background-image: url(coffee.png); 
+    background-repeat: no-repeat;
+    background-position: left center;
+    padding-left: 25px;
+}  
 
 
+/* =======Table========= */
 
 table {
     margin-left: auto;
     margin-right: auto;
-    width: 550px;
+    width: 650px;
     border-spacing: 0;
     padding-bottom: 20px;
     padding-top: 10px;
@@ -130,9 +132,6 @@ td {
     padding: 10px 30px 10px 10px;
 }
 
-table td:first {
-    width: 150px;
-}
 
 thead {
     background-color: #E2D2B0;
@@ -158,7 +157,13 @@ audio {
     padding-top: 0px;
 }
 
+.highlight {
+    font-weight: bold;
+    color: #3f1c28;
 
+}
+
+/* ========== Forms ========== */
 
 label { display: block;
     float: left;
@@ -176,5 +181,10 @@ input, textarea { display: block;
 
 #submit {
     width: 100px;
+    border-radius: 5px;
+}
+
+#reset {
+    width: 60px;
     border-radius: 5px;
 }

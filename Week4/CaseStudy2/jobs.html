@@ -10,7 +10,7 @@
 <body>
     <div id="wrapper">
         <header>
-            <img id="logo" src="javalogo.JPG" height="100" alt="JavaLogo">
+            <img id="logo" src="javalogo.jpg" height="100" alt="JavaLogo">
         </header>
 
         <div id="leftcolumn">
@@ -33,17 +33,18 @@
 
                 <form action="show_post.php" method="post">
                     <label for="name">*Name:</label>
-                    <input type="text" name="name" id="name" required>
+                    <input type="text" name="name" id="name" required placeholder="Enter your name here">
 
                     <label for="email">*Email:</label>
-                    <input type="email" name="email" id="email" required>
+                    <input type="email" name="email" id="email" required placeholder="Enter your email here">
 
                     <label for="startDate">Start Date:</label>
                     <input type="date" name="startDate" id="startDate">
 
                     <label for="experience">*Experience:</label>
-                    <textarea type="textarea" name="experience" rows="3" cols="20" required></textarea>
-
+                    <textarea type="textarea" name="experience" rows="4" cols="20" required placeholder="Enter your pass experience here"></textarea>
+                    
+                    <input type="reset" value="Clear" id="reset">
                     <input type="submit" value="Apply Now" id="submit">
 
 
