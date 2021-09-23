@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>JavaJam Coffee House</title>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="javajam.css">
+    <script type="text/javascript" src="calculate.js"></script>
+</head>
+
+<body>
+    <div id="wrapper">
+        <header>
+            <img id="logo" src="javalogo.jpg" height="100" alt="JavaLogo">
+        </header>
+
+        <div id="leftcolumn">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="music.html">Music</a></li>
+                    <li><a href="jobs.html">Jobs</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div id="rightcolumn">
+            <div id="content">
+                <h2>Coffee at JavaJam</h2>
+                <table id="table_menu">
+                    <tr>
+                        <th>Just Java</th>
+                        <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
+                            <span class="highlight">Endless Cup $2.00</span>
+                        </td>
+                        <td align="center"><input type="text" name="justjavaqty" id="justjavaqty" class="inputmenu">
+                        </td>
+                        <td align="center"><input type="text" name="justjavasubtotal" id="justjavasubtotal"
+                                class="inputmenu" readonly></td>
+                    </tr>
+                    <tr>
+                        <th>Cafe au Lait</th>
+                        <td>House blended coffee infused into a smooth, steamed milk. <br>
+                            <form class="highlight">
+                                <p>
+                                    <label> <input type="radio" name="cafeprice" value="2.0" checked
+                                        onclick="computeCost()" />
+                                        Single $2.0 </label>
+                                    <label> <input type="radio" name="cafeprice" value="3.0"
+                                        onclick="computeCost()" />
+                                        Double $3.0 </label>
+                                </p>
+                            </form>
+                        </td>
+                        <td align="center"><input type="text" name="cafeqty" id="cafeqty" class="inputmenu"></td>
+                        <td align="center"><input type="text" name="cafesubtotal" id="cafesubtotal" class="inputmenu"
+                                readonly></td>
+
+                    </tr>
+                    <tr>
+                        <th>Iced Cappuccino</th>
+                        <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass. <br>
+                            <form class="highlight">
+                                <p>
+                                    <label> <input type="radio" name="capprice" value="4.75" checked
+                                        onclick="computeCost()" />
+                                        Single $4.75 </label>
+                                    <label> <input type="radio" name="capprice" value="5.75"
+                                        onclick="computeCost()" />
+                                        Double $5.75 </label>
+                                </p>
+                            </form>
+                        </td>
+                        <td align="center"><input type="text" name="capqty" id="capqty" class="inputmenu"></td>
+                        <td align="center"><input type="text" name="capsubtotal" id="capsubtotal" class="inputmenu"
+                                readonly></td>
+                    </tr>
+                    <tr>
+                        <td></td>
+                        <td align="right">Total Price</td>
+                        <td colspan="2" align="center"><input type="text" name="total" id="total" readonly></td>
+                    </tr>
+                </table>
+                <script type="text/javascript" src="calculate.js"></script>
+            </div>
+
+        </div>
+
+
+        <div>
+            <footer>
+                <small><i>
+                        Copyright&copy 2014 JavaJam Coffee House <br>
+                        <a href="mailto:thientan@pham.com">thientan@pham.com</a>
+                    </i></small>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
