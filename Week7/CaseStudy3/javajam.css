@@ -139,6 +139,7 @@ td {
     width: 50px;
     height: 50px;
     padding-bottom: 0px;
+    float: center;
 }
 
 #total{
@@ -180,19 +181,25 @@ audio {
 
 /* ========== Forms ========== */
 
-label { display: block;
+label {
     float: left;
     text-align: right;
-    width: 8em;
-    padding-right: 30px;
-    display: inline;}
+    width: 9em;
+    padding-right: 15px;
+}
 
-input, textarea { display: block;
+.job-fields {
+    display: block;
     margin-bottom: 20px;
     margin-left: 20px;
     width: 150px;
     padding: 1px;
     border: 1px solid black;
+}
+
+.price-selection{
+    display: inline;
+    float: left;
 }
 
 #submit {

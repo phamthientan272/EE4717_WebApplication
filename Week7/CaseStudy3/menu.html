@@ -30,32 +30,39 @@
                 <h2>Coffee at JavaJam</h2>
                 <table id="table_menu">
                     <tr>
+                        <th>Drink</th>
+                        <th>Description</th>
+                        <th>Qty</th>
+                        <th>Sub Total $</th>
+                    </tr>
+                    <tr>
                         <th>Just Java</th>
                         <td>Regular house blend, decaffeinated coffee, or flavor of the day.<br>
                             <span class="highlight">Endless Cup $2.00</span>
                         </td>
-                        <td align="center"><input type="text" name="justjavaqty" id="justjavaqty" class="inputmenu">
+                        <td style="text-align:center"><input type="number" min='0' name="justjavaqty" id="justjavaqty" value = '0'
+                                class="inputmenu" onkeyup="if(this.value<0){this.value= this.value * -1}">
                         </td>
                         <td align="center"><input type="text" name="justjavasubtotal" id="justjavasubtotal"
-                                class="inputmenu" readonly></td>
+                                class="inputmenu" readonly value = '0'></td>
                     </tr>
                     <tr>
                         <th>Cafe au Lait</th>
                         <td>House blended coffee infused into a smooth, steamed milk. <br>
                             <form class="highlight">
-                                <p>
-                                    <label> <input type="radio" name="cafeprice" value="2.0" checked
+
+                                <label><input type="radio" name="cafeprice" value="2.0" checked onclick="computeCost()"
+                                        class="price-selection" />Single $2.0</label>
+                                <label> <input class="price-selection" type="radio" name="cafeprice" value="3.0"
                                         onclick="computeCost()" />
-                                        Single $2.0 </label>
-                                    <label> <input type="radio" name="cafeprice" value="3.0"
-                                        onclick="computeCost()" />
-                                        Double $3.0 </label>
-                                </p>
+                                    Double $3.0 </label>
+
                             </form>
                         </td>
-                        <td align="center"><input type="text" name="cafeqty" id="cafeqty" class="inputmenu"></td>
+                        <td align="center"><input type="number" min='0' name="cafeqty" id="cafeqty" class="inputmenu" value = '0'
+                                onkeyup="if(this.value<0){this.value= this.value * -1}"></td>
                         <td align="center"><input type="text" name="cafesubtotal" id="cafesubtotal" class="inputmenu"
-                                readonly></td>
+                                readonly value = '0'></td>
 
                     </tr>
                     <tr>
@@ -63,23 +70,24 @@
                         <td>Sweetened espresso blended with icy-cold milk and served in a chilled glass. <br>
                             <form class="highlight">
                                 <p>
-                                    <label> <input type="radio" name="capprice" value="4.75" checked
-                                        onclick="computeCost()" />
+                                    <label> <input class="price-selection" type="radio" name="capprice" value="4.75"
+                                            checked onclick="computeCost()" />
                                         Single $4.75 </label>
-                                    <label> <input type="radio" name="capprice" value="5.75"
-                                        onclick="computeCost()" />
+                                    <label> <input class="price-selection" type="radio" name="capprice" value="5.75"
+                                            onclick="computeCost()" />
                                         Double $5.75 </label>
                                 </p>
                             </form>
                         </td>
-                        <td align="center"><input type="text" name="capqty" id="capqty" class="inputmenu"></td>
+                        <td align="center"><input type="number" min='0' value='0' name="capqty" id="capqty"
+                                class="inputmenu" onkeyup="if(this.value<0){this.value= this.value * -1}"></td>
                         <td align="center"><input type="text" name="capsubtotal" id="capsubtotal" class="inputmenu"
-                                readonly></td>
+                                readonly value='0'></td>
                     </tr>
                     <tr>
                         <td></td>
-                        <td align="right">Total Price</td>
-                        <td colspan="2" align="center"><input type="text" name="total" id="total" readonly></td>
+                        <th align="right">Total Price($) </th>
+                        <td colspan="2" align="center"><input type="text" name="total" id="total" readonly value= '0'></td>
                     </tr>
                 </table>
                 <script type="text/javascript" src="calculate.js"></script>

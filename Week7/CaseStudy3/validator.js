@@ -13,7 +13,7 @@ function checkName(event){
 
 function validateEmail(event){
     var email = event.currentTarget;
-    var pos = email.value.search(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/);
+    var pos = email.value.search(/^\w+([\.-]?\w+)*@[\w]+(\.[\w]+){0,2}\.[\w]{2,3}$/);
     if (pos != 0){
         alert("The email " + email.value +
         " is not in the correct form"
